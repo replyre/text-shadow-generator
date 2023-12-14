@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Text Shadow</title>
+  </head>
+  <body>
+    <h1>Text Shadow Generator</h1>
+    <div class="container">
+      <div id="output">Hello World</div>
+      <div class="settings">
+        <label for="x-axis">
+          offset-x:
+          <input
+            type="range"
+            name="x-axis"
+            id="x-axis"
+            min="0"
+            max="100"
+            value="10"
+            step="5"
+        /></label>
+        <label for="y-axis">
+          offset-y:
+          <input
+            type="range"
+            name="y-axis"
+            id="y-axis"
+            min="0"
+            max="100"
+            value="10"
+            step="5"
+        /></label>
+        <label for="blur">
+          blur:
+          <input
+            type="range"
+            name="blur"
+            id="blur"
+            min="0"
+            max="50"
+            step="5"
+            value="10"
+        /></label>
+        <label for="color">
+          color: <input type="color" name="color" id="color"
+        /></label>
+      </div>
+    </div>
+    <div id="code">
+      <p>text-shadow:</p>
+      10px 10px 10px #000000;
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
